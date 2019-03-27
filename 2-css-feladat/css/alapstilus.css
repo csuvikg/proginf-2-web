@@ -3,21 +3,37 @@
 /*betűtípus importálás*/
  @import 'https://fonts.googleapis.com/css?family=Oswald';
 
-header {
-    background: url('kepek/hatter_felso.jpg')
+h1 {
+    margin: 0;
+    padding: 1rem;
 }
 
 body {
+    background-color: #000000;
+    background-image: url('../kepek/hatter_felso.jpg');
+    background-repeat: no-repeat; 
+    margin: 8px;
+    padding: 0 120px;
+    font-family: Arial;
+}
 
+header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+footer {
+    background-image: url('../kepek/hatter_also.jpg');
+    text-align: center;
 }
 
 h1,h2 {
     font-family: 'Oswald', sans-serif;
-	text-shadow: 2px 2px 1px #ccc;
+	text-shadow: 3px 3px 2px #ccc;
 }
 
 header, footer, main {
-    width: 70%;
+    width: 100%;
     min-width: 400px;
     max-width: 1000px;
 }
@@ -50,4 +66,21 @@ header, footer {
 
 #leiras > .ikon {
     background: url('kepek/ikonkeszlet.png') 0 -30px;
+}
+
+aside {
+    margin: 16px;
+    padding: 8px;
+    width: 30%;
+    float: right;
+    background-color: #eebc83;
+    border-radius: 3px;
+    border: 1px solid #666;
+    box-shadow: 8px 8px 2px #ccc;
+    font-style: italic;
+}
+
+aside > p {
+    text-align: right;
+    font-weight: bold;
 }
